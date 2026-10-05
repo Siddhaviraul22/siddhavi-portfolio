@@ -2,11 +2,7 @@ import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
 function CustomCursor() {
-  const [position, setPosition] = useState({
-    x: 0,
-    y: 0,
-  });
-
+  const [position, setPosition] = useState({ x: 0, y: 0 });
   const [hovering, setHovering] = useState(false);
   const [visible, setVisible] = useState(false);
 
@@ -53,7 +49,7 @@ function CustomCursor() {
           scale: hovering ? 1.8 : 1,
         }}
         transition={{
-          duration: 0.05,
+          duration: 0.02,
         }}
       />
 
@@ -64,7 +60,7 @@ function CustomCursor() {
           y: position.y,
         }}
         transition={{
-          duration: 0.18,
+          duration: 0.08,
           ease: "easeOut",
         }}
       />
@@ -77,7 +73,7 @@ function CustomCursor() {
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.3,
+          duration: 0.15,
         }}
       />
     </>
