@@ -63,7 +63,7 @@ function Skills() {
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           WHAT I WORK WITH
         </motion.span>
@@ -71,7 +71,7 @@ function Skills() {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           Skills & <em>Tools</em>
         </motion.h2>
@@ -90,7 +90,7 @@ function Skills() {
               opacity: 1,
               y: 0,
             }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{
               delay: groupIndex * 0.15,
               duration: 0.8,
@@ -116,7 +116,7 @@ function Skills() {
                     scale: 1,
                     rotate: 0,
                   }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false, amount: 0.2 }}
                   transition={{
                     delay: groupIndex * 0.1 + index * 0.04,
                     duration: 0.5,

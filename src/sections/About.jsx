@@ -28,7 +28,7 @@ function About() {
         <motion.span
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           GET TO KNOW ME
         </motion.span>
@@ -36,7 +36,7 @@ function About() {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8 }}
         >
           About <em>Me</em>
@@ -48,7 +48,7 @@ function About() {
           className="about-main-text"
           initial={{ opacity: 0, y: 70 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.9 }}
         >
           <p className="large-text">
@@ -75,7 +75,7 @@ function About() {
           className="about-side"
           initial={{ opacity: 0, x: 80 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 1 }}
         >
           <div className="about-location">
@@ -114,7 +114,7 @@ function About() {
               y: 0,
               scale: 1,
             }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{
               delay: index * 0.12,
               duration: 0.7,

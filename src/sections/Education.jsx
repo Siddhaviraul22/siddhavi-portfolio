@@ -9,7 +9,7 @@ function Education() {
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           MY FOUNDATION
         </motion.span>
@@ -17,7 +17,7 @@ function Education() {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           Education
         </motion.h2>
@@ -35,7 +35,7 @@ function Education() {
           scale: 1,
           y: 0,
         }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
         transition={{
           duration: 0.9,
         }}

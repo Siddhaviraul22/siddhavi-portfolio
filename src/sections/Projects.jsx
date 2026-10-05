@@ -68,7 +68,7 @@ function Projects() {
           className="section-heading"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8 }}
         >
           <span>MY WORK</span>
@@ -81,7 +81,7 @@ function Projects() {
           className="projects-intro"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           A collection of web applications and full-stack projects built while
@@ -99,7 +99,7 @@ function Projects() {
             data-number={project.number}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: false, amount: 0.2 }}
             transition={{
               duration: 0.8,
               delay: index * 0.1,
@@ -134,7 +134,7 @@ function Projects() {
                 className="project-category"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
+                viewport={{ once: false, amount: 0.2 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
               >
                 {project.category}
@@ -167,7 +167,7 @@ function Projects() {
               className="project-bottom-line"
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, amount: 0.2 }}
               transition={{
                 duration: 1,
                 delay: 0.3 + index * 0.1,

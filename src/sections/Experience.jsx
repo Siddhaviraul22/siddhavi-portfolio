@@ -37,7 +37,7 @@ function Experience() {
         <motion.span
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           WHERE I'VE WORKED
         </motion.span>
@@ -45,7 +45,7 @@ function Experience() {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           Experience & <em>Growth</em>
         </motion.h2>
@@ -56,7 +56,7 @@ function Experience() {
           className="timeline-line"
           initial={{ height: 0 }}
           whileInView={{ height: "100%" }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{
             duration: 1.8,
             ease: "easeInOut",
@@ -78,7 +78,7 @@ function Experience() {
               x: 0,
             }}
             viewport={{
-              once: true,
+              once: false,
               amount: 0.3,
             }}
             transition={{

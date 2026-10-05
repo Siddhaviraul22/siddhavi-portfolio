@@ -28,35 +28,35 @@ function Contact() {
             y: 0,
           }}
           viewport={{
-            once: true,
+            once: false,
+            amount: 0.2,
           }}
         >
           HAVE A PROJECT IN MIND?
         </motion.span>
 
         <motion.h2
-          initial={{
-            opacity: 0,
-            y: 120,
-            clipPath: "inset(100% 0 0 0)",
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            clipPath: "inset(0% 0 0 0)",
-          }}
-          viewport={{
-            once: true,
-          }}
-          transition={{
-            duration: 1.1,
-            ease: [0.22, 1, 0.36, 1],
-          }}
-        >
-          Let's build
-          <br />
-          something <em>great.</em>
-        </motion.h2>
+  initial={{
+    opacity: 0,
+    y: 120,
+  }}
+  whileInView={{
+    opacity: 1,
+    y: 0,
+  }}
+  viewport={{
+    once: false,
+    amount: 0.2,
+  }}
+  transition={{
+    duration: 1.1,
+    ease: [0.22, 1, 0.36, 1],
+  }}
+>
+  Let's build
+  <br />
+  something <em>great.</em>
+</motion.h2>
 
         <motion.a
           href="mailto:raulsiddhavi22@gmail.com"
@@ -70,7 +70,8 @@ function Contact() {
             y: 0,
           }}
           viewport={{
-            once: true,
+            once: false,
+            amount: 0.2,
           }}
           transition={{
             delay: 0.3,

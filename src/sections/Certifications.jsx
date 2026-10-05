@@ -64,7 +64,7 @@ function Certifications() {
         <motion.span
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           CONTINUOUS LEARNING
         </motion.span>
@@ -72,7 +72,7 @@ function Certifications() {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.2 }}
         >
           Certifications
         </motion.h2>
@@ -82,7 +82,7 @@ function Certifications() {
         className="certification-intro"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.2 }}
         transition={{ delay: 0.2 }}
       >
         A collection of courses and certifications that represent
@@ -106,7 +106,7 @@ function Certifications() {
               rotateY: 0,
             }}
             viewport={{
-              once: true,
+              once: false,
               amount: 0.2,
             }}
             transition={{
