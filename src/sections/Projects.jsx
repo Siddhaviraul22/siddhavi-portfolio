@@ -73,8 +73,6 @@ function Projects() {
         >
           <span>MY WORK</span>
           <h2>
-            Selected
-            <br />
             <em>Projects.</em>
           </h2>
         </motion.div>
